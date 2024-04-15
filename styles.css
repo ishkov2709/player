@@ -1,0 +1,56 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+section {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.plate-box {
+  display: none;
+  animation: rotate linear 10000ms infinite;
+
+  pointer-events: none;
+}
+
+.label-track {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.label-text {
+  padding: 8px;
+
+  background-color: rgb(178, 182, 171);
+  border-radius: 8px;
+
+  transition: background-color 250ms linear;
+}
+
+.label-text:hover {
+  background-color: #fff;
+}
+
+.title {
+  text-align: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

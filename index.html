@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player</title>
+    <link rel="icon" type="image/x-icon" href="/img/plate.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="plate-box">
+          <img src="./img/plate.png" alt="plate" width="480px" />
+        </div>
+
+        <div class="audio-box"></div>
+
+        <form class="form">
+          <label class="label-track">
+            <span class="label-text">Upload track</span>
+            <input
+              type="file"
+              class="file"
+              name="track"
+              style="visibility: hidden"
+            />
+          </label>
+        </form>
+      </section>
+    </main>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
